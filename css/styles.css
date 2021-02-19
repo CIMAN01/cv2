@@ -11,7 +11,6 @@ h1 {
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
-    
 }
 
 h2 {
@@ -51,43 +50,43 @@ a:hover {
     color: #EAF6F6;
 }
 
-.text-h1 {
-    color: #11999E;;
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    /* fonts 1em = 16px = 100% */
-    font-size: 12vw; /* prefer rem over em, %, or px to avoid inheritance */
-    
-}
-
-.text-h2 {
-    position: absolute;
-    top: 80%;
-    left: 38%; 
-    /* fonts 1em = 16px = 100% */
-    font-size: 3.5vw; /* prefer rem over em, %, or px to avoid inheritance */
-    font-weight: normal;
-}
-
-#last-p {
-    text-align: center;
-}
-
 #stock-image {
+    position: relative;
+    z-index: 0;
     width:100%; 
     height:100%; 
     object-fit: contain;
     padding: 0; 
 }
 
+.text-h1 {
+    color: #11999E;;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    /* fonts 1em = 16px = 100% */
+    font-size: 12vw; /* prefer rem over em, %, or px to avoid inheritance */
+}
+
+.text-h2 {
+    text-align: right;
+    /* fonts 1em = 16px = 100% */
+    font-size: 3.5vw; /* prefer rem over em, %, or px to avoid inheritance */
+    font-weight: normal;
+    padding-right: 25%;
+}
+
+.top-container .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100%;
+  }
+
 .top-container {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    padding: 5px 0 0 5px;
+    position: relative;
+    display: inline-block;
 }
 
 .middle-container {
@@ -151,6 +150,9 @@ a:hover {
     margin-left: 30px;
 } 
 
+#last-p {
+    text-align: center;
+}
 
 .btn {
     background: #11cdd4;
