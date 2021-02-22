@@ -7,10 +7,7 @@ body {
 }
 
 h1 {
-    color: #ebd8b7;
-    font-family: 'Sacramento', cursive;
-    font-size: 5.625rem;
-    margin: 50px auto 0 auto;
+    text-align: center;
 }
 
 h2 {
@@ -20,16 +17,16 @@ h2 {
     font-size: 2.5rem;
     font-weight: normal;
     padding-bottom: 10px;
-}
+} 
 
 h3 {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+/* p {
     line-height: 2;
-}
+} */
 
 hr {
     border: dotted #80a0a0 6px;
@@ -59,27 +56,27 @@ a:hover {
     padding: 0; 
 }
 
-.text-h1 {
-    color: #11999E;;
-    text-align: center;
-    padding-top: 20%;
-    padding-bottom: 5%;
+.welcome-text-1 {
+    color: #11999E;
+    font-family: 'Sacramento', cursive;
     /* fonts 1em = 16px = 100% */
-    font-size: 12vw; /* prefer rem over em, %, or px to avoid inheritance */
+    font-size: 8vw; /* prefer rem over em, %, or px */
+    line-height: 3;
 }
 
-.text-h2 {
-    text-align: right;
-    /* fonts 1em = 16px = 100% */
-    font-size: 3.5vw; /* prefer rem over em, %, or px to avoid inheritance */
+.welcome-text-2 {
+    color: #ebd8b7;
+    font-family: 'Montserrat', sans-serif;
+    /* padding-bottom: 10px; */
     font-weight: normal;
-    padding-right: 25%;
+    /* fonts 1em = 16px = 100% */
+    font-size: 2vw; /* prefer rem over em, %, or px */
 }
 
 .top-container .overlay {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 0px;
     width:100%;
     height:100%;
   }
@@ -90,7 +87,8 @@ a:hover {
 }
 
 .middle-container {
-    margin: 100px 0;       
+    margin: 100px 0;
+    line-height: 2;       
 }
 
 .bottom-container {
